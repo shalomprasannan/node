@@ -1,0 +1,12 @@
+html
+    head
+        link(rel="stylesheet", href="/CSS/style.css")
+    body 
+        .center 
+            form(action="/UserAccount")
+                input(type='text' placeholder='Username' name='Username') 
+                br
+                input(type="Password" placeholder='Password' name='Password') 
+                br 
+                input(type="submit", value="Login")
+            p(style={ visibility: (Failed) ? "visible" : "hidden"}) Bad username password combination !
